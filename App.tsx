@@ -1,11 +1,11 @@
-import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
+import React from "react";
+import { NativeBaseProvider, Box } from "native-base";
+import { Cadastro } from "./src/screens/Cadastro";
 
 export default function App() {
   return (
-    <View>
-      <StatusBar style="auto" />
-      <Text>Hello world</Text>
-    </View>
+    <NativeBaseProvider>
+      <Cadastro />
+    </NativeBaseProvider>
   );
 }
